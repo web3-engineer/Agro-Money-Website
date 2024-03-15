@@ -1,28 +1,51 @@
 body {
-    margin: 0;
-    font-family: sans-serif;  }
+    margin: 0; 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+}
 
 header {
-    background-color: #f0f0f0;  padding: 1rem 2rem;  }
-
-nav {
-    display: flex;
-    justify-content: space-between;  }
+    background-color: #fff; 
+    padding: 1rem 2rem;
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.1); /* Subtle box shadow */
+}
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 1rem;
+    display: flex; 
+    gap: 1rem; 
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #333; 
+    transition: color 0.2s ease; 
 }
 
-/* Add styles for #three-d-container here (e.g., width, height, margin) */
+nav a:hover { 
+    color: #007bff; /* Example hover color */
+}
+
+main {
+    flex: 1; /* Make 'main' take up available space */
+    width: 80%;  
+    max-width: 1200px; 
+    margin: 2rem auto;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#three-d-container {
+    width: 600px;
+    height: 400px;
+    background-color: #f0f0f0;  
+    border: 1px solid #ccc;
+}
